@@ -19,6 +19,7 @@ export default function ClientsPartnersSection() {
     { name: 'ALKIFAH CONTRACTING', fullName: 'ALKIFAH CONTRACTING', logo: '/alkifah contracting.png' },
     { name: 'CHINA HARBOUR', fullName: 'CHINA HARBOUR', logo: '/hec.png' },
     { name: 'EL SEIF', fullName: 'EL SEIF', logo: '/el seif.png' },
+    { name: 'NESMA', fullName: 'NESMA', logo: '/nesma.jpeg' },
   ]
 
   return (
@@ -35,29 +36,34 @@ export default function ClientsPartnersSection() {
           </p>
 
           {/* Partners Section */}
-          <div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="overflow-hidden">
+            <div className="flex gap-8 items-center animate-scroll">
+              {/* First set of partners */}
               {partners.map((partner, index) => (
                 <div
-                  key={index}
-                  className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border-2 border-gray-200 hover:border-black text-center flex flex-col items-center justify-center min-h-[160px]"
+                  key={`first-${index}`}
+                  className="relative w-32 h-32 md:w-40 md:h-40 flex-shrink-0"
                 >
-                  <div className="relative w-24 h-24 mx-auto mb-3">
-                    <Image
-                      src={partner.logo}
-                      alt={partner.name}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <p className="text-sm font-semibold text-black mb-1">
-                    {partner.name}
-                  </p>
-                  {partner.fullName && partner.fullName !== partner.name && (
-                    <p className="text-xs text-gray-600 leading-tight">
-                      {partner.fullName}
-                    </p>
-                  )}
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {partners.map((partner, index) => (
+                <div
+                  key={`second-${index}`}
+                  className="relative w-32 h-32 md:w-40 md:h-40 flex-shrink-0"
+                >
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               ))}
             </div>

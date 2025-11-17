@@ -20,7 +20,6 @@ export default function Header() {
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About Us' },
     { href: '#services', label: 'Services' },
-    { href: '#licenses', label: 'Licenses' },
     { href: '#organization', label: 'Organization' },
     { href: '#safety', label: 'Safety & Quality' },
     { href: '#clients-partners', label: 'Partners' },
@@ -36,17 +35,21 @@ export default function Header() {
           : 'bg-black/30 backdrop-blur-sm'
       }`}
     >
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 py-1 relative">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/logo.png"
-              alt="Hawai GAR Logo"
-              width={200}
-              height={70}
-              className="h-16 md:h-20 w-auto object-contain"
-              priority
-            />
+          <Link href="/" className="flex items-center relative">
+            {/* White background with circular bottom - exactly behind logo, touching top */}
+            {/* <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-32 md:w-36 h-20 md:h-24 bg-white rounded-b-full z-0" /> */}
+            <div className="relative z-10">
+              <Image
+                src="/logo.png"
+                alt="Hawai GAR Logo"
+                width={200}
+                height={70}
+                className="h-20 md:h-24 w-auto object-contain"
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop Menu */}

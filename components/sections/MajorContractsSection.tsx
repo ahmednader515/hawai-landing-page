@@ -6,7 +6,7 @@ export default function MajorContractsSection() {
       ref: '440005457',
       projectDate: 'February 1, 2018',
       client: 'Alfanar',
-      projectName: 'CONSTRUCTION OF NEW MILITARY CITY – 2 (MC-2) 132 / 13.8KV SUBSTATION, ABHA (Asphalt Works)',
+      projectName: 'CONSTRUCTION OF NEW MILITARY CITY – 2 (MC-2) 132 / 13.8KV SUBSTATION, ABHA (Substation civil work, road and asphalt work, electrical work)',
       contractStart: 'February 5, 2018',
       contractEnd: 'March 10, 2018',
     },

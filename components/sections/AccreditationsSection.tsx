@@ -8,10 +8,9 @@ export default function AccreditationsSection() {
 
   const certificates = [
     { image: '/certificate 1.jpg', name: 'Certificate 1' },
-    { image: '/certificate 2.jpg', name: 'Certificate 2' },
-    { image: '/certificate 3.jpg', name: 'Certificate 3' },
-    { image: '/certificate 4.jpg', name: 'Certificate 4' },
-    { image: '/certificate 5.jpg', name: 'Certificate 5' },
+    { image: '/certificate 3.jpg', name: 'Certificate 2' },
+    { image: '/certificate 4.jpg', name: 'Certificate 3' },
+    { image: '/certificate 5.jpg', name: 'Certificate 4' },
   ]
 
   // Close modal on ESC key

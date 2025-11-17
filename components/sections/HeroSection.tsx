@@ -56,9 +56,6 @@ export default function HeroSection() {
         )}
       </div>
 
-      {/* Black overlay for text readability */}
-      <div className="absolute inset-0 bg-black/60 z-10" />
-
       {/* Content */}
       <div className="relative z-20 flex items-center justify-center h-full">
         <div className="text-center px-4 max-w-4xl">
@@ -71,16 +68,16 @@ export default function HeroSection() {
           <p className="text-lg md:text-xl text-gray-200 mb-10 animate-fade-in-delay-2">
             Building the Future with Excellence and Integrity
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-3">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay-3">
             <a
               href="#about"
-              className="px-8 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors"
+              className="px-8 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors w-auto"
             >
               Learn More
             </a>
             <a
               href="#contact"
-              className="px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+              className="px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors w-auto"
             >
               Contact Us
             </a>

@@ -1,6 +1,10 @@
 'use client'
 
+import { useState } from 'react'
+
 export default function SafetySection() {
+  const [isExpanded, setIsExpanded] = useState(false)
+
   const safetyPrinciples = [
     'Every employee shall familiarize himself with the safety rules.',
     'The primary responsibility of each employee is to reduce the possibility of an accident.',
@@ -22,13 +26,39 @@ export default function SafetySection() {
     <section id="safety" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6 text-center">
-            Safety Policies & Quality Assurance
-          </h2>
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="w-full text-center mb-6 focus:outline-none"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 inline-flex items-center justify-center gap-4 hover:text-gray-700 transition-colors">
+              Safety Policies & Quality Assurance
+              <svg
+                className={`w-8 h-8 transition-transform duration-300 ${
+                  isExpanded ? 'rotate-180' : ''
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </h2>
+          </button>
           <div className="h-1 w-24 bg-black mx-auto mb-12" />
 
-          {/* Safety Policies Section */}
-          <div className="bg-gray-50 p-8 md:p-12 rounded-lg shadow-lg mb-8">
+          {/* Collapsible Content */}
+          <div
+            className={`overflow-hidden transition-all duration-300 ease-in-out ${
+              isExpanded ? 'max-h-[5000px] opacity-100' : 'max-h-0 opacity-0'
+            }`}
+          >
+            {/* Safety Policies Section */}
+            <div className="bg-gray-50 p-8 md:p-12 rounded-lg shadow-lg mb-8">
             <h3 className="text-3xl font-bold text-black mb-6">
               HAWAI GAR SAFETY POLICIES
             </h3>
@@ -101,6 +131,7 @@ export default function SafetySection() {
                 <div className="text-gray-700">Safety Monitoring</div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

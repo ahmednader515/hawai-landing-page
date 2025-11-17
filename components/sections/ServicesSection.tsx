@@ -38,199 +38,19 @@ export default function ServicesSection() {
             </h3>
           </div>
 
-          {/* Electrical Works Section */}
+          {/* Civil Works Section - Priority 1 */}
           <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg mb-8">
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div>
-                <h3 className="text-3xl font-bold text-black mb-6">ELECTRICAL WORKS</h3>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  HG Transmission & Distribution (HG-T&D) is a leading engineering,
-                  procurement and construction contractor in the transmission &
-                  distribution sector in Saudi Arabia. The company specializes in extra
-                  high voltage and high voltage substations & transmission lines and
-                  electrical distribution projects on lump sum turnkey bases.
-                </p>
-              </div>
-              <div className="relative h-64 md:h-full rounded-lg overflow-hidden shadow-md">
-                <Image
-                  src="/8.jpg"
-                  alt="Electrical Works"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="mb-8">
-              <h4 className="text-2xl font-semibold text-black mb-4">
-                Areas of Expertise:
-              </h4>
-              <ul className="space-y-3">
-                {expertiseAreas.map((area, index) => (
-                  <li
-                    key={index}
-                    className="flex items-start text-gray-700 leading-relaxed"
-                  >
-                    <span className="text-black mr-3 font-bold">•</span>
-                    <span>{area}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Transmission Lines Services */}
-            <div className="mb-8">
-              <h4 className="text-xl font-semibold text-black mb-4">
-                High voltage & extra high voltage transmission lines services:
-              </h4>
-              <div className="grid md:grid-cols-2 gap-3">
-                {transmissionLineServices.map((service, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center text-gray-700 bg-gray-50 p-3 rounded"
-                  >
-                    <span className="text-black mr-2 font-bold">•</span>
-                    <span>{service}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Design & Engineering and Construction */}
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-white rounded-lg shadow-lg border-l-4 border-black overflow-hidden">
-              <div className="relative h-48 w-full">
-                <Image
-                  src="/9.jpg"
-                  alt="Design & Engineering"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-black mb-4">
-                  Design & Engineering
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Exclusive in-house design and engineering facilities with highly
-                  qualified & experienced electrical, civil, protection and transmission
-                  line design engineers, equipped with the latest software programs.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-lg border-l-4 border-black overflow-hidden">
-              <div className="relative h-48 w-full">
-                <Image
-                  src="/10.jpg"
-                  alt="Construction"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-black mb-4">Construction</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  We have a considerable team of qualified & experienced engineers,
-                  supervisors, technicians, together with a complete inventory of project
-                  offices, camp facilities and construction equipment.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Our Services Section */}
-          <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg mb-8">
-            <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text-black mb-2">Our Services</h3>
-              <h4 className="text-2xl font-semibold text-black mb-6">
-                Hawai GAR for contracting
-              </h4>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
-                <h4 className="text-xl font-bold text-black mb-4">
-                  Erection of Gantry in Substation
-                </h4>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start">
-                    <span className="text-black mr-2 font-bold">•</span>
-                    <span>Over Head Tower Assembly, Erection, Tightening of Tower</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-black mr-2 font-bold">•</span>
-                    <span>Conductor/OPGW Stringing, Sagging</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-black mr-2 font-bold">•</span>
-                    <span>Substation Electrical & Mechanical Works</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
-                <h4 className="text-xl font-bold text-black mb-4">Mechanical Works</h4>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start">
-                    <span className="text-black mr-2 font-bold">•</span>
-                    <span>Piping (CS, SS, GRP, GRE, PVDF, P91, P22, HDPE)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-black mr-2 font-bold">•</span>
-                    <span>Motors & Pumps</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-black mr-2 font-bold">•</span>
-                    <span>Erection - Steel Structure Fabrication</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-black mr-2 font-bold">•</span>
-                    <span>Activities – HVAC and Insulation Works - Fire Fighting Networks</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
-                <h4 className="text-xl font-bold text-black mb-4">Power Plants Erection</h4>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start">
-                    <span className="text-black mr-2 font-bold">•</span>
-                    <span>Gas Turbines</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-black mr-2 font-bold">•</span>
-                    <span>Steam Turbines</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-black mr-2 font-bold">•</span>
-                    <span>Boilers</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-black mr-2 font-bold">•</span>
-                    <span>Diesel Generators</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
-                <h4 className="text-xl font-bold text-black mb-4">Plumbing</h4>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start">
-                    <span className="text-black mr-2 font-bold">•</span>
-                    <span>Plant Piping-Erection-Welding-Reinstatement</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Civil Works Section */}
-          <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg mb-8">
-            <h3 className="text-3xl font-bold text-black mb-6">CIVIL WORKS</h3>
             <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/17.jpg"
+                  alt="Civil Works"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div>
+                <h3 className="text-3xl font-bold text-black mb-6">CIVIL WORKS</h3>
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
                   Hawai GAR Civil has been in construction for the past 12 years and has
                   completed projects that encompass the full spectrum of civil engineering
@@ -245,48 +65,135 @@ export default function ServicesSection() {
                   highest quality standards.
                 </p>
               </div>
-              <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-md">
+            </div>
+          </div>
+
+          {/* Our Projects Section */}
+          <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg mb-8">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-black mb-2">Our Projects</h3>
+              <div className="h-1 w-24 bg-black mx-auto mb-6" />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                '/project-1.jpeg',
+                '/project-2.jpeg',
+                '/project-3.jpeg',
+                '/project-4.jpeg',
+                '/project-5.jpeg',
+                '/project-6.jpeg',
+              ].map((image, index) => (
+                <div
+                  key={index}
+                  className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow group"
+                >
+                  <Image
+                    src={image}
+                    alt={`Project ${index + 1}`}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Mechanical Works and Electrical Works - Side by Side */}
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            {/* Mechanical Works Section - Priority 2 */}
+            <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg">
+              <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-md mb-6">
                 <Image
-                  src="/17.jpg"
-                  alt="Civil Works"
+                  src="/10.jpg"
+                  alt="Mechanical Works"
                   fill
                   className="object-cover"
                 />
               </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">MECHANICAL WORKS</h3>
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                  Our mechanical works division specializes in comprehensive mechanical
+                  engineering solutions for industrial and construction projects. We provide
+                  expert services in piping systems, equipment installation, and structural
+                  fabrication.
+                </p>
+              </div>
+            </div>
+
+            {/* Electrical Works Section - Priority 3 */}
+            <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg">
+              <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-md mb-6">
+                <Image
+                  src="/8.jpg"
+                  alt="Electrical Works"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">ELECTRICAL WORKS</h3>
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                  HG Transmission & Distribution (HG-T&D) is a leading engineering,
+                  procurement and construction contractor in the transmission &
+                  distribution sector in Saudi Arabia. The company specializes in extra
+                  high voltage and high voltage substations & transmission lines and
+                  electrical distribution projects on lump sum turnkey bases.
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* Major Machineries & Equipment Section */}
-          <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg">
-            <h3 className="text-3xl font-bold text-black mb-6">
-              MAJOR MACHINERIES & EQUIPMENT
-            </h3>
-            <p className="text-lg text-gray-700 mb-6">
-              We also have a large inventory of major construction equipment, including:
-            </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {[
-                'Concrete mixer machines',
-                'Loaders',
-                'Excavators',
-                'Auger machines',
-                'Quadruple stringing equipment',
-                'Rock drilling equipment',
-                'Heavy lift cranes',
-                'Low bed trailers',
-                'Fork lifts',
-                'Transformer',
-                'Oil filtration equipment',
-                'SF6 gas handling plant',
-              ].map((equipment, index) => (
-                <div
-                  key={index}
-                  className="flex items-center text-gray-700 bg-gray-50 p-4 rounded-lg border border-gray-200 hover:border-black transition-colors"
-                >
-                  <span className="text-black mr-3 font-bold">•</span>
-                  <span>{equipment}</span>
+          {/* Additional Services Section */}
+          <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg mb-8">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-black mb-2">Additional Services</h3>
+              <h4 className="text-2xl font-semibold text-black mb-6">
+                Hawai GAR for contracting
+              </h4>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                <Image
+                  src="/power-substation.jpg"
+                  alt="Erection of Gantry in Substation"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h4 className="text-xl font-bold text-white">
+                    Erection of Gantry in Substation
+                  </h4>
                 </div>
-              ))}
+              </div>
+
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                <Image
+                  src="/power-plant-erection.png"
+                  alt="Power Plants Erection"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h4 className="text-xl font-bold text-white">Power Plants Erection</h4>
+                </div>
+              </div>
+
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                <Image
+                  src="/plumbing.jpg"
+                  alt="Plumbing"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h4 className="text-xl font-bold text-white">Plumbing</h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
