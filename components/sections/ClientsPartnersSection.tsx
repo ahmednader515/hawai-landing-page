@@ -36,13 +36,13 @@ export default function ClientsPartnersSection() {
           </p>
 
           {/* Partners Section */}
-          <div className="overflow-hidden">
-            <div className="flex gap-8 items-center animate-scroll">
+          <div className="overflow-hidden -mx-4 md:mx-0">
+            <div className="flex gap-3 sm:gap-4 md:gap-8 items-center animate-scroll">
               {/* First set of partners */}
               {partners.map((partner, index) => (
                 <div
                   key={`first-${index}`}
-                  className="relative w-32 h-32 md:w-40 md:h-40 flex-shrink-0"
+                  className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-40 md:h-40 flex-shrink-0"
                 >
                   <Image
                     src={partner.logo}
@@ -56,7 +56,7 @@ export default function ClientsPartnersSection() {
               {partners.map((partner, index) => (
                 <div
                   key={`second-${index}`}
-                  className="relative w-32 h-32 md:w-40 md:h-40 flex-shrink-0"
+                  className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-40 md:h-40 flex-shrink-0"
                 >
                   <Image
                     src={partner.logo}
