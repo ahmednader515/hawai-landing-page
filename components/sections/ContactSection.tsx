@@ -45,7 +45,7 @@ export default function ContactSection() {
           </h2>
           <div className="h-1 w-24 bg-black mx-auto mb-4" />
           <p className="text-center text-xl md:text-2xl font-light text-gray-800 italic mb-2">
-            It's not about what you doubt, how iconic you make it
+            It&apos;s not about what you doubt, how iconic you make it
           </p>
           <p className="text-center text-2xl md:text-3xl font-bold text-black mb-12">
             Hawai GAR

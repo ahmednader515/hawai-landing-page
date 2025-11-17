@@ -60,7 +60,7 @@ export default function AboutSection() {
             <div className="bg-gray-50 p-8 rounded-lg border-l-4 border-black">
               <h3 className="text-2xl font-bold text-black mb-4">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Hawai GAR's mission is to maintain a leading position in engineering,
+                Hawai GAR&apos;s mission is to maintain a leading position in engineering,
                 procurement, and construction projects specializing in the power,
                 construction, transmission distribution, Refineries, and Power Plant
                 sectors.

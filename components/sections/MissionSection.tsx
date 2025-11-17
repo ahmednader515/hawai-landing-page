@@ -13,7 +13,7 @@ export default function MissionSection() {
           <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg">
             <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-6">
               To deliver exceptional construction services that exceed our
-              clients' expectations while maintaining the highest standards of
+              clients&apos; expectations while maintaining the highest standards of
               quality, safety, and professionalism.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
