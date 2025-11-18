@@ -79,6 +79,9 @@ export default function ProjectsSection() {
                     alt={project.title}
                     fill
                     className="object-cover"
+                    loading="lazy"
+                    quality={80}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <div className="absolute top-4 right-4 bg-black/80 text-white px-3 py-1 rounded text-sm font-semibold">
                     {project.type}

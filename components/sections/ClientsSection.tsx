@@ -71,6 +71,9 @@ export default function ClientsSection() {
                     alt={client.name}
                     fill
                     className="object-contain"
+                    loading="lazy"
+                    quality={75}
+                    sizes="(max-width: 768px) 50vw, 25vw"
                   />
                 </div>
                 <h3 className="text-sm font-semibold text-black mb-1">

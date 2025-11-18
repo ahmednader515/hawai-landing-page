@@ -49,6 +49,9 @@ export default function ClientsPartnersSection() {
                     alt={partner.name}
                     fill
                     className="object-contain"
+                    loading="lazy"
+                    quality={75}
+                    sizes="(max-width: 640px) 64px, (max-width: 768px) 80px, 160px"
                   />
                 </div>
               ))}
@@ -63,6 +66,9 @@ export default function ClientsPartnersSection() {
                     alt={partner.name}
                     fill
                     className="object-contain"
+                    loading="lazy"
+                    quality={75}
+                    sizes="(max-width: 640px) 64px, (max-width: 768px) 80px, 160px"
                   />
                 </div>
               ))}

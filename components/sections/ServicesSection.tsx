@@ -47,6 +47,9 @@ export default function ServicesSection() {
                   alt="Civil Works"
                   fill
                   className="object-cover"
+                  loading="lazy"
+                  quality={85}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div>
@@ -92,6 +95,9 @@ export default function ServicesSection() {
                     alt={`Project ${index + 1}`}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    quality={80}
+                    sizes="(max-width: 768px) 50vw, 33vw"
                   />
                 </div>
               ))}
@@ -108,6 +114,9 @@ export default function ServicesSection() {
                   alt="Mechanical Works"
                   fill
                   className="object-cover"
+                  loading="lazy"
+                  quality={85}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div>
@@ -129,6 +138,9 @@ export default function ServicesSection() {
                   alt="Electrical Works"
                   fill
                   className="object-cover"
+                  loading="lazy"
+                  quality={85}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div>
@@ -160,6 +172,9 @@ export default function ServicesSection() {
                   alt="Erection of Gantry in Substation"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  quality={80}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -175,6 +190,9 @@ export default function ServicesSection() {
                   alt="Power Plants Erection"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  quality={80}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -188,6 +206,9 @@ export default function ServicesSection() {
                   alt="Plumbing"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  quality={80}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">

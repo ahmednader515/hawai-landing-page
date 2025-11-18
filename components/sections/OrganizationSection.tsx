@@ -28,6 +28,9 @@ export default function OrganizationSection() {
                 width={1200}
                 height={800}
                 className="w-full h-auto object-contain rounded-lg"
+                loading="lazy"
+                quality={85}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
               />
             </div>
           </div>

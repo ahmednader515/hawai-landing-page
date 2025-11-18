@@ -56,6 +56,9 @@ export default function AccreditationsSection() {
                     alt={certificate.name}
                     fill
                     className="object-contain p-4"
+                    loading="lazy"
+                    quality={85}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div className="p-4 text-center">
@@ -103,6 +106,9 @@ export default function AccreditationsSection() {
                     alt="Expanded certificate"
                     fill
                     className="object-contain p-8"
+                    quality={90}
+                    priority
+                    sizes="90vw"
                   />
                 </div>
               </div>

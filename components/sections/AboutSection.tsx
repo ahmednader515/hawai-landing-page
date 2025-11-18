@@ -29,6 +29,9 @@ export default function AboutSection() {
                 alt="Hawai GAR Construction Site"
                 fill
                 className="object-cover"
+                priority
+                quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
             <div>
@@ -63,6 +66,9 @@ export default function AboutSection() {
                   alt="Excellence"
                   fill
                   className="object-cover"
+                  loading="lazy"
+                  quality={80}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <div className="p-6">
@@ -77,6 +83,9 @@ export default function AboutSection() {
                   alt="Reliability"
                   fill
                   className="object-cover"
+                  loading="lazy"
+                  quality={80}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <div className="p-6">
@@ -91,6 +100,9 @@ export default function AboutSection() {
                   alt="Innovation"
                   fill
                   className="object-cover"
+                  loading="lazy"
+                  quality={80}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <div className="p-6">
