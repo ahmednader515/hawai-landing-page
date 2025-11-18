@@ -33,7 +33,7 @@ export default function SafetySection() {
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 inline-flex items-center justify-center gap-4 hover:text-gray-700 transition-colors">
               Safety Policies & Quality Assurance
               <svg
-                className={`w-8 h-8 transition-transform duration-300 ${
+                className={`w-14 h-14 md:w-16 md:h-16 transition-transform duration-300 ${
                   isExpanded ? 'rotate-180' : ''
                 }`}
                 fill="none"

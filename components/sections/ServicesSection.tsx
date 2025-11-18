@@ -71,8 +71,6 @@ export default function ServicesSection() {
           {/* Our Projects Section */}
           <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg mb-8">
             <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text-black mb-2">Our Projects</h3>
-              <div className="h-1 w-24 bg-black mx-auto mb-6" />
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {[

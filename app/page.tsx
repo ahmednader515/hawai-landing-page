@@ -9,7 +9,6 @@ import OrganizationSection from '@/components/sections/OrganizationSection'
 import SafetySection from '@/components/sections/SafetySection'
 import ClientsPartnersSection from '@/components/sections/ClientsPartnersSection'
 import AccreditationsSection from '@/components/sections/AccreditationsSection'
-import MajorContractsSection from '@/components/sections/MajorContractsSection'
 import ContactSection from '@/components/sections/ContactSection'
 
 export default function Home() {
@@ -23,7 +22,6 @@ export default function Home() {
       <SafetySection />
       <ClientsPartnersSection />
       <AccreditationsSection />
-      <MajorContractsSection />
       <ContactSection />
       <Footer />
     </main>

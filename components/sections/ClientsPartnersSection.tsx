@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Marquee from 'react-fast-marquee'
 
 export default function ClientsPartnersSection() {
   const partners = [
@@ -20,6 +21,7 @@ export default function ClientsPartnersSection() {
     { name: 'CHINA HARBOUR', fullName: 'CHINA HARBOUR', logo: '/hec.png' },
     { name: 'EL SEIF', fullName: 'EL SEIF', logo: '/el seif.png' },
     { name: 'NESMA', fullName: 'NESMA', logo: '/nesma.jpeg' },
+    { name: 'Sakany', fullName: 'Sakany', logo: '/sakany.png' },
   ]
 
   return (
@@ -37,12 +39,16 @@ export default function ClientsPartnersSection() {
 
           {/* Partners Section */}
           <div className="overflow-hidden -mx-4 md:mx-0">
-            <div className="flex gap-3 sm:gap-4 md:gap-8 items-center animate-scroll">
-              {/* First set of partners */}
+            <Marquee
+              speed={50}
+              gradient={false}
+              pauseOnHover={false}
+              className="py-4"
+            >
               {partners.map((partner, index) => (
                 <div
-                  key={`first-${index}`}
-                  className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-40 md:h-40 flex-shrink-0"
+                  key={index}
+                  className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-40 md:h-40 flex-shrink-0 mx-3 sm:mx-4 md:mx-8"
                 >
                   <Image
                     src={partner.logo}
@@ -51,28 +57,11 @@ export default function ClientsPartnersSection() {
                     className="object-contain"
                     loading="lazy"
                     quality={75}
-                    sizes="(max-width: 640px) 64px, (max-width: 768px) 80px, 160px"
+                    sizes="(max-width: 640px) 96px, (max-width: 768px) 112px, 160px"
                   />
                 </div>
               ))}
-              {/* Duplicate set for seamless loop */}
-              {partners.map((partner, index) => (
-                <div
-                  key={`second-${index}`}
-                  className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-40 md:h-40 flex-shrink-0"
-                >
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    fill
-                    className="object-contain"
-                    loading="lazy"
-                    quality={75}
-                    sizes="(max-width: 640px) 64px, (max-width: 768px) 80px, 160px"
-                  />
-                </div>
-              ))}
-            </div>
+            </Marquee>
           </div>
 
           <div className="mt-12 text-center">
