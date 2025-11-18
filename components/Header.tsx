@@ -45,7 +45,7 @@ export default function Header() {
                 src="/logo.png"
                 alt="Hawai GAR Logo"
                 width={200}
-                height={70}
+                height={71}
                 className="h-20 md:h-24 w-auto object-contain"
                 priority
                 quality={90}

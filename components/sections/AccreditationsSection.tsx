@@ -8,10 +8,7 @@ export default function AccreditationsSection() {
   const [selectedCertificate, setSelectedCertificate] = useState<string | null>(null)
 
   const certificates = [
-    { image: '/certificate 1.jpg', name: 'Certificate 1' },
-    { image: '/certificate 3.jpg', name: 'Certificate 2' },
-    { image: '/certificate 4.jpg', name: 'Certificate 3' },
-    { image: '/certificate 5.jpg', name: 'Certificate 4' },
+    { image: '/certificate 3.jpg', name: 'Aramco Accreditation' },
   ]
 
   // Close modal on ESC key
@@ -71,7 +68,8 @@ export default function AccreditationsSection() {
               excellence and compliance with industry standards.
             </p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="flex justify-center">
+              <div className="grid md:grid-cols-1 gap-8 max-w-md">
             {certificates.map((certificate, index) => (
               <div
                 key={index}
@@ -97,7 +95,8 @@ export default function AccreditationsSection() {
                 </div>
               </div>
             ))}
-          </div>
+              </div>
+            </div>
 
           {/* Modal for expanded certificate */}
           {selectedCertificate && (
