@@ -162,54 +162,114 @@ export default function ServicesSection() {
               </h4>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
-                <Image
-                  src="/power-substation.jpg"
-                  alt="Erection of Gantry in Substation"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                  quality={80}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h4 className="text-xl font-bold text-white">
-                    Erection of Gantry in Substation
-                  </h4>
+            <div className="flex justify-center mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl w-full">
+                <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                  <Image
+                    src="/power-substation.jpg"
+                    alt="Erection of Gantry in Substation"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    quality={80}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h4 className="text-xl font-bold text-white">
+                      Erection of Gantry in Substation
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                  <Image
+                    src="/power-plant-erection.png"
+                    alt="Power Plants Erection"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    quality={80}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h4 className="text-xl font-bold text-white">Power Plants Erection</h4>
+                  </div>
                 </div>
               </div>
+            </div>
 
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
-                <Image
-                  src="/power-plant-erection.png"
-                  alt="Power Plants Erection"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                  quality={80}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h4 className="text-xl font-bold text-white">Power Plants Erection</h4>
-                </div>
+            {/* Material Supplies Section */}
+            <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg mb-8">
+              <div className="text-center mb-8">
+                <h3 className="text-3xl font-bold text-black mb-2">Material Supplies</h3>
+                <div className="h-1 w-24 bg-black mx-auto mb-6" />
               </div>
 
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
-                <Image
-                  src="/plumbing.jpg"
-                  alt="Plumbing"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                  quality={80}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h4 className="text-xl font-bold text-white">Material Supplies</h4>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                  <Image
+                    src="/block.png"
+                    alt="Blocks"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    quality={80}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h4 className="text-xl font-bold text-white">Blocks</h4>
+                  </div>
+                </div>
+
+                <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                  <Image
+                    src="/pipes.png"
+                    alt="Pipes"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    quality={80}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h4 className="text-xl font-bold text-white">Pipes</h4>
+                  </div>
+                </div>
+
+                <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                  <Image
+                    src="/steel.png"
+                    alt="Steel"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    quality={80}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h4 className="text-xl font-bold text-white">Steel</h4>
+                  </div>
+                </div>
+
+                <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                  <Image
+                    src="/truck.png"
+                    alt="Trucks"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    quality={80}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h4 className="text-xl font-bold text-white">Trucks</h4>
+                  </div>
                 </div>
               </div>
             </div>
