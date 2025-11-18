@@ -104,7 +104,7 @@ export default function ServicesSection() {
             <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg">
               <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-md mb-6">
                 <Image
-                  src="/10.jpg"
+                  src="/8.jpg"
                   alt="Mechanical Works"
                   fill
                   className="object-cover"
@@ -125,7 +125,7 @@ export default function ServicesSection() {
             <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg">
               <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-md mb-6">
                 <Image
-                  src="/8.jpg"
+                  src="/10.jpg"
                   alt="Electrical Works"
                   fill
                   className="object-cover"
