@@ -155,9 +155,6 @@ export default function ServicesSection() {
           <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg mb-8">
             <div className="text-center mb-8">
               <h3 className="text-3xl font-bold text-black mb-2">Additional Services</h3>
-              <h4 className="text-2xl font-semibold text-black mb-6">
-                Hawai GAR for contracting
-              </h4>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
@@ -244,7 +241,7 @@ export default function ServicesSection() {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h4 className="text-xl font-bold text-white">Material Supplies</h4>
+                  <h4 className="text-xl font-bold text-white">Materials Supply</h4>
                 </div>
               </div>
             </div>

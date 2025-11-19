@@ -9,6 +9,7 @@ export default function AccreditationsSection() {
 
   const certificates = [
     { image: '/certificate 3.jpg', name: 'Aramco Accreditation' },
+    { image: '/certificate 1.jpg', name: 'Saga certificate' },
   ]
 
   // Close modal on ESC key

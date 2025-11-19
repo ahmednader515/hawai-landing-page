@@ -87,7 +87,7 @@ export default function SafetySection() {
           </div>
 
           {/* Quality Assurance Section */}
-          <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg border-2 border-black">
+          <div className="bg-white p-8 md:p-12 rounded-lg ">
             <h3 className="text-3xl font-bold text-black mb-6">QUALITY ASSURANCE</h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               Quality control (QC) is a procedure or set of procedures intended to
