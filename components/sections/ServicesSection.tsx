@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Marquee from 'react-fast-marquee'
 
 export default function ServicesSection() {
   const expertiseAreas = [
@@ -77,6 +78,8 @@ export default function ServicesSection() {
                 '/project-1.jpeg',
                 '/project-2.jpeg',
                 '/project-3.jpeg',
+                '/project-7.jpeg',
+                '/project-8.jpeg',
                 '/project-4.jpeg',
                 '/project-5.jpeg',
                 '/project-6.jpeg',
@@ -157,125 +160,186 @@ export default function ServicesSection() {
               <h3 className="text-3xl font-bold text-black mb-2">Additional Services</h3>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
-                <Image
-                  src="/power-substation.jpg"
-                  alt="Erection of Gantry in Substation"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                  quality={80}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h4 className="text-xl font-bold text-white">
-                    Erection of Gantry in Substation
-                  </h4>
-                </div>
-              </div>
-
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
-                <Image
-                  src="/power-plant-erection.png"
-                  alt="Power Plants Erection"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                  quality={80}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h4 className="text-xl font-bold text-white">Power Plants Erection</h4>
-                </div>
-              </div>
-
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
-                <div className="absolute inset-0 grid grid-cols-2 gap-0">
-                  <div className="relative">
-                    <Image
-                      src="/block.png"
-                      alt="Blocks"
-                      fill
-                      className="object-cover"
-                      loading="lazy"
-                      quality={80}
-                      sizes="(max-width: 768px) 50vw, 16.5vw"
-                    />
-                  </div>
-                  <div className="relative">
-                    <Image
-                      src="/pipes.png"
-                      alt="Pipes"
-                      fill
-                      className="object-cover"
-                      loading="lazy"
-                      quality={80}
-                      sizes="(max-width: 768px) 50vw, 16.5vw"
-                    />
-                  </div>
-                  <div className="relative">
-                    <Image
-                      src="/steel.png"
-                      alt="Steel"
-                      fill
-                      className="object-cover"
-                      loading="lazy"
-                      quality={80}
-                      sizes="(max-width: 768px) 50vw, 16.5vw"
-                    />
-                  </div>
-                  <div className="relative">
-                    <Image
-                      src="/truck.png"
-                      alt="Trucks"
-                      fill
-                      className="object-cover"
-                      loading="lazy"
-                      quality={80}
-                      sizes="(max-width: 768px) 50vw, 16.5vw"
-                    />
+            <div className="overflow-hidden -mx-4 md:mx-0 mb-8">
+              <Marquee
+                speed={50}
+                gradient={false}
+                pauseOnHover={false}
+                className="py-4"
+              >
+                <div className="relative h-64 w-80 flex-shrink-0 mx-4 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                  <Image
+                    src="/power-substation.jpg"
+                    alt="Erection of Gantry in Substation"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    quality={80}
+                    sizes="320px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h4 className="text-xl font-bold text-white">
+                      Erection of Gantry in Substation
+                    </h4>
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h4 className="text-xl font-bold text-white">Materials Supply</h4>
-                </div>
-              </div>
 
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
-                <Image
-                  src="/earth-preparation.png"
-                  alt="Earth Preparation"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                  quality={80}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h4 className="text-xl font-bold text-white">Earth Preparation</h4>
+                <div className="relative h-64 w-80 flex-shrink-0 mx-4 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                  <Image
+                    src="/power-plant-erection.png"
+                    alt="Power Plants Erection"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    quality={80}
+                    sizes="320px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h4 className="text-xl font-bold text-white">Power Plants Erection</h4>
+                  </div>
                 </div>
-              </div>
 
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
-                <Image
-                  src="/ohtl.png"
-                  alt="Overhead Transmission Line"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                  quality={80}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h4 className="text-xl font-bold text-white">OHTL</h4>
+                <div className="relative h-64 w-80 flex-shrink-0 mx-4 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                  <div className="absolute inset-0 grid grid-cols-3 gap-0">
+                    <div className="relative">
+                      <Image
+                        src="/block.png"
+                        alt="Blocks"
+                        fill
+                        className="object-cover"
+                        loading="lazy"
+                        quality={80}
+                        sizes="107px"
+                      />
+                    </div>
+                    <div className="relative">
+                      <Image
+                        src="/pipes.png"
+                        alt="Pipes"
+                        fill
+                        className="object-cover"
+                        loading="lazy"
+                        quality={80}
+                        sizes="107px"
+                      />
+                    </div>
+                    <div className="relative">
+                      <Image
+                        src="/steel.png"
+                        alt="Steel"
+                        fill
+                        className="object-cover"
+                        loading="lazy"
+                        quality={80}
+                        sizes="107px"
+                      />
+                    </div>
+                    <div className="relative">
+                      <Image
+                        src="/truck.png"
+                        alt="Trucks"
+                        fill
+                        className="object-cover"
+                        loading="lazy"
+                        quality={80}
+                        sizes="107px"
+                      />
+                    </div>
+                    <div className="relative">
+                      <Image
+                        src="/brick.png"
+                        alt="Bricks"
+                        fill
+                        className="object-cover"
+                        loading="lazy"
+                        quality={80}
+                        sizes="107px"
+                      />
+                    </div>
+                    <div className="relative">
+                      <Image
+                        src="/cement.png"
+                        alt="Cement"
+                        fill
+                        className="object-cover"
+                        loading="lazy"
+                        quality={80}
+                        sizes="107px"
+                      />
+                    </div>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h4 className="text-xl font-bold text-white">Materials Supply</h4>
+                  </div>
                 </div>
-              </div>
+
+                <div className="relative h-64 w-80 flex-shrink-0 mx-4 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                  <Image
+                    src="/earth-preparation.png"
+                    alt="Earth Preparation"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    quality={80}
+                    sizes="320px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h4 className="text-xl font-bold text-white">Earth Preparation</h4>
+                  </div>
+                </div>
+
+                <div className="relative h-64 w-80 flex-shrink-0 mx-4 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                  <Image
+                    src="/ohtl.png"
+                    alt="Overhead Transmission Line"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    quality={80}
+                    sizes="320px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h4 className="text-xl font-bold text-white">OHTL</h4>
+                  </div>
+                </div>
+
+                <div className="relative h-64 w-80 flex-shrink-0 mx-4 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                  <Image
+                    src="/pipe-isolation.png"
+                    alt="Pipe Isolation"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    quality={80}
+                    sizes="320px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h4 className="text-xl font-bold text-white">Pipe Isolation</h4>
+                  </div>
+                </div>
+
+                <div className="relative h-64 w-80 flex-shrink-0 mx-4 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                  <Image
+                    src="/substation preparation 380Kv.png"
+                    alt="380Kv Substation Preparation"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    quality={80}
+                    sizes="320px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h4 className="text-xl font-bold text-white">380Kv Substation Preparation</h4>
+                  </div>
+                </div>
+              </Marquee>
             </div>
           </div>
         </div>
