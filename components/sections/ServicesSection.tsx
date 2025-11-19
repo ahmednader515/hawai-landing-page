@@ -273,7 +273,7 @@ export default function ServicesSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h4 className="text-xl font-bold text-white">Overhead Transmission Line</h4>
+                  <h4 className="text-xl font-bold text-white">OHTL</h4>
                 </div>
               </div>
             </div>
