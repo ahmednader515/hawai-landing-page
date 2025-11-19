@@ -244,6 +244,38 @@ export default function ServicesSection() {
                   <h4 className="text-xl font-bold text-white">Materials Supply</h4>
                 </div>
               </div>
+
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                <Image
+                  src="/earth-preparation.png"
+                  alt="Earth Preparation"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  quality={80}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h4 className="text-xl font-bold text-white">Earth Preparation</h4>
+                </div>
+              </div>
+
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
+                <Image
+                  src="/ohtl.png"
+                  alt="Overhead Transmission Line"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  quality={80}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h4 className="text-xl font-bold text-white">Overhead Transmission Line</h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
